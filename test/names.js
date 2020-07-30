@@ -11,7 +11,7 @@ metatests.test('API exported count', test => {
 metatests.test('API exported types', test => {
     for (const key in lib) {
         const fn = lib[key];
-        test.strictSame(typeof fn, 'functions');
+        test.strictSame(typeof fn, 'function');
     }
     test.end();
 });
